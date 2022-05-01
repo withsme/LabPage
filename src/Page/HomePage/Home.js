@@ -5,6 +5,17 @@ import ActivitySlide from './Slide/ActivitySlide';
 import Footer from '../../Component/Footer';
 import {parseString} from 'xml2js';
 
+// img 
+import Infor_sub from '../../img/infor_sub.png';
+import Robot_sub from '../../img/robot_sub.png';
+import Service_sub from '../../img/service_sub.png';
+import Heal_sub from '../../img/heal_sub.png';
+import AI_sub from '../../img/ai_sub.png';
+import Data_sub from '../../img/data_sub.png';
+import New_lame from '../../img/NewsLAME.png';
+import New_wav2 from '../../img/NewsWav2.png';
+import New_mapping from '../../img/NewsAMapping.png';
+
 // 모듈 로드npm
 // var url = "https://techneedle.com/archives/category/default/ai";
 
@@ -108,12 +119,12 @@ function Home() {
           </Col>
           <Col flex="40%" style={{width: '150px', marginLeft: '80px'}}>
             <Carousel autoplay>
-              <img src={ require('../../img/infor_sub.png') } width='150px' height='300px' />
-              <img src={ require('../../img/robot_sub.png') } width='150px' height='300px'/>
-              <img src={ require('../../img/service_sub.png') } width='150px' height='300px'/>
-              <img src={ require('../../img/heal_sub.png') } width='150px' height='300px'/>
-              <img src={ require('../../img/ai_sub.png') } width='150px' height='300px'/>
-              <img src={ require('../../img/data_sub.png') } width='150px' height='300px'/>
+              <img src={Infor_sub} width='150px' height='300px' />
+              <img src={Robot_sub} width='150px' height='300px'/>
+              <img src={Service_sub} width='150px' height='300px'/>
+              <img src={Heal_sub} width='150px' height='300px'/>
+              <img src={AI_sub} width='150px' height='300px'/>
+              <img src={Data_sub} width='150px' height='300px'/>
             </Carousel>
           </Col>
         </Row>
@@ -125,9 +136,9 @@ function Home() {
         <Row justify="center">
           <Col flex="43%" style={{ textAlign: 'center', width: '350px', marginRight: '60px', marginLeft: '20px'}}>
             <Carousel autoplay effect='fade'>
-              <img src={ require('../../img/NewsLAME.png') } width='380px' height='auto'/>
-              <img src={ require('../../img/NewsWav2.png') } width='380px' height='auto'/>
-              <img src={ require('../../img/NewsAMapping.png') } width='380px' height='auto'/>
+              <img src={New_lame} width='380px' height='auto'/>
+              <img src={New_wav2} width='380px' height='auto'/>
+              <img src={New_mapping} width='380px' height='auto'/>
             </Carousel>
           </Col>
           <Col flex="45%">

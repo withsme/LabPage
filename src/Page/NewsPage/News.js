@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import { Row, Col, List, Pagination } from 'antd';
 
+import Imformation from '../../img/information.png';
+
 function News() {
   const listData = [];
   for (let i = 0; i < 6; i++) {
@@ -24,7 +26,7 @@ function News() {
         renderItem={(item) => (
           <List.Item
             key={item.title}
-            extra={ <img src={ require('../../img/information.png') } width='330px' height='auto'/> }
+            extra={ <img src={Imformation} width='330px' height='auto'/> }
           >
             <List.Item.Meta title={item.title}/>
               {item.content}

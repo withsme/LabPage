@@ -2,6 +2,14 @@ import React from 'react';
 import styled from "styled-components";
 import { Row, Col } from 'antd';
 
+// img 
+import Information from '../../img/information.png';
+import Robot from '../../img/robot.png';
+import Service from '../../img/service.jpg';
+import Community from '../../img/community.jpg';
+import AI from '../../img/AI.png';
+import Data from '../../img/data.png';
+
 function ResearchArea() {
     return (
         <>
@@ -14,7 +22,7 @@ function ResearchArea() {
             <Wrapper>
                 <Row justify="center">
                     <Col flex="20%">
-                        <img src={ require('../../img/information.png') } width='380px' height='auto'/>
+                        <img src={Information} width='380px' height='auto'/>
                         <Area>
                             Information Retrieval and Natural Language Processing
                         </Area>
@@ -49,7 +57,7 @@ function ResearchArea() {
                      </Content>
                     </Col>
                     <Col flex="20%">
-                     <img src={ require('../../img/robot.png') } width='450px' height='auto'/>
+                     <img src={Robot} width='450px' height='auto'/>
                      <Area>
                         SW based Robotics
                      </Area>
@@ -57,7 +65,7 @@ function ResearchArea() {
                 </Row>
                 <Row justify="center">
                     <Col flex="20%">
-                     <img src={ require('../../img/service.jpg') } width='390px' height='auto'/>
+                     <img src={Service} width='390px' height='auto'/>
                      <Area>
                         Service Platforms 
                      </Area>
@@ -88,7 +96,7 @@ function ResearchArea() {
                      </Content>
                     </Col>
                     <Col flex="20%">
-                     <img src={ require('../../img/community.jpg') } width='380px' height='auto'/>
+                     <img src={Community} width='380px' height='auto'/>
                      <Area>
                         Public Health 
                      </Area>
@@ -96,7 +104,7 @@ function ResearchArea() {
                 </Row>
                 <Row justify="center">
                     <Col flex="20%">
-                     <img src={ require('../../img/AI.png') } width='420px' height='auto'/>
+                     <img src={AI} width='420px' height='auto'/>
                      <Area>
                         Artificial Intelligence (AI) and Machine Learning Stuffs  
                      </Area>
@@ -134,7 +142,7 @@ function ResearchArea() {
                      </Content>
                     </Col>
                     <Col flex="20%">
-                     <img src={ require('../../img/data.png') } width='420px' height='auto'/>
+                     <img src={Data} width='420px' height='auto'/>
                      <Area>
                         Data Science and Data Fusion  
                      </Area>

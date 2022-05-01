@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
 import { Row, Col, List, Card } from 'antd';
+
+import Robot from '../../img/robot.png';
+import Information from '../../img/information.png';
+import Service from '../../img/service.jpg';
+
 const { Meta } = Card;
 
 const listData = [];
@@ -12,7 +17,7 @@ for (let i = 0; i < 3; i++) {
           <Card
             bordered={false}
             style={{ width: '390px'}}
-            cover={<img src={ require('../../img/robot.png')} />}
+            cover={<img src={Robot} />}
           >
             <Meta 
               title="체육대회" 
@@ -25,7 +30,7 @@ for (let i = 0; i < 3; i++) {
           <Card
             bordered={false}
             style={{ width: '320px'}}
-            cover={<img src={ require('../../img/information.png')}/> }
+            cover={<img src={Information}/> }
             >
               <Meta 
                 title="세미나" 
@@ -38,7 +43,7 @@ for (let i = 0; i < 3; i++) {
           <Card
             bordered={false}
             style={{ width: '345px'}}
-            cover={<img src={ require('../../img/service.jpg')}/> }
+            cover={<img src={Service}/> }
           >
             <Meta 
               title="MT" 

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import { Row, Col } from 'antd';
 
+import PiImg from '../../img/pi.jpg';
+
 function PI() {
   return (
     <>
@@ -11,7 +13,7 @@ function PI() {
       <Wrapper>
         <Row justify="center">
           <Col flex ="30%">
-              <img src={ require('../../img/pi.jpg') } width='400px' height='auto'/>
+              <img src={PiImg} width='400px' height='auto'/>
           </Col>
           <Col flex ="35%" style={{ marginTop:"90px", marginLeft:"160px",}}>
             Assistant Prof.   <Name>Yuchul Jung</Name>

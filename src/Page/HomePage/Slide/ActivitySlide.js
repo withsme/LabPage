@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Row, Col, Card } from 'antd';
 
+// img
+import Robot from '../../../img/robot.png';
+import Information from '../../../img/information.png';
+import Service from '../../../img/service.jpg';
+
 const { Meta } = Card;
 
 function ActivitySlide() {
@@ -11,7 +16,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '300px'}}
-          cover={<img src={ require('../../../img/robot.png')} />}
+          cover={<img src={ Robot}/>}
         >
           <Meta 
             title="체육대회" 
@@ -24,7 +29,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '240px'}}
-          cover={<img src={ require('../../../img/information.png')}/> }
+          cover={<img src={Information}/> }
           >
             <Meta 
               title="세미나" 
@@ -37,7 +42,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '255px'}}
-          cover={<img src={ require('../../../img/service.jpg')}/> }
+          cover={<img src={Service}/> }
         >
           <Meta 
             title="MT" 
@@ -50,7 +55,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '300px'}}
-          cover={<img src={ require('../../../img/robot.png')} />}
+          cover={<img src={ Robot}/>}
         >
           <Meta 
             title="체육대회" 
@@ -63,7 +68,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '240px'}}
-          cover={<img src={ require('../../../img/information.png')}/> }
+          cover={<img src={Information}/> }
           >
             <Meta 
               title="세미나" 
@@ -76,7 +81,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '255px' }}
-          cover={<img src={ require('../../../img/service.jpg')}/> }
+          cover={<img src={Service}/> }
         >
           <Meta 
             title="MT" 
@@ -89,7 +94,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '240px'}}
-          cover={<img src={ require('../../../img/information.png')}/> }
+          cover={<img src={Information}/> }
           >
             <Meta 
               title="세미나" 
@@ -102,7 +107,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '255px' }}
-          cover={<img src={ require('../../../img/service.jpg')}/> }
+          cover={<img src={Service}/> }
         >
           <Meta 
             title="MT" 
@@ -115,7 +120,7 @@ function ActivitySlide() {
         <Card
           bordered={false}
           style={{ width: '300px'}}
-          cover={<img src={ require('../../../img/robot.png')} />}
+          cover={<img src={ Robot}/>}
         >
           <Meta 
             title="체육대회" 

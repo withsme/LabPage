@@ -2,6 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import { Row, Col } from 'antd';
 
+// img
+import System1 from '../../img/system1.jpg';
+import Voice from '../../img/voice.jpg';
+import Crawling from '../../img/crawling.jpg';
+import System4 from '../../img/system4.png';
+
 function System() {
     return (
         <>
@@ -11,7 +17,7 @@ function System() {
             <Wrapper>
                 <Row justify="center">
                     <Col flex="25%">
-                        <img src={ require('../../img/system1.jpg') } width='340px' height='auto'/>
+                        <img src={System1} width='340px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <SubTitle>
@@ -25,7 +31,7 @@ function System() {
                 </Row>
                 <Row justify="center" style={{marginTop : "30px"}}>
                     <Col flex="25%">
-                        <img src={ require('../../img/voice.jpg') } width='340px' height='auto'/>
+                        <img src={Voice} width='340px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <SubTitle>
@@ -41,7 +47,7 @@ function System() {
                 </Row>
                 <Row justify="center" style={{marginTop : "30px"}}>
                     <Col flex="25%">
-                        <img src={ require('../../img/crawling.jpg') } width='340px' height='auto'/>
+                        <img src={Crawling} width='340px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <SubTitle>                         
@@ -59,7 +65,7 @@ function System() {
                 </Row>
                 <Row justify="center" style={{marginTop : "30px"}}>
                     <Col flex="25%">
-                        <img src={ require('../../img/system4.png') } width='360px' height='auto'/>
+                        <img src={System4} width='360px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <SubTitle>                         

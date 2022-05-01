@@ -1,6 +1,6 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -17,11 +17,12 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  mode:'development',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: '/node_modules/',
+        exclude: '/node_modules',
         loader: 'babel-loader'
       },
       {
@@ -39,9 +40,30 @@ module.exports = {
         }
       },
       {
-        test: /\.(gif|svg|jpg|png|PNG)$/,
-        loader: "file-loader",
-      }
+        test: /\.(gif|png|jpe?g|svg|PNG)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              }
+            }
+          }
+        ]
+      },
     ]
   },
   plugins: [

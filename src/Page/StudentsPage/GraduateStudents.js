@@ -2,6 +2,10 @@ import React from 'react';
 import styled from "styled-components";
 import { Row, Col } from 'antd';
 
+// img 
+import Lee from '../../img/graduateLee.jpg';
+import Kim from '../../img/graduateKim.jpg';
+
 function GraduateStudents() {
     return (
         <>
@@ -11,7 +15,7 @@ function GraduateStudents() {
             <Wrapper>
                 <Row justify="center">
                     <Col flex="20%">
-                        <img src={ require('../../img/graduateLee.jpg') } width='210px' height='auto'/>
+                        <img src={Lee} width='210px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <Name>이영훈 (Yeonghun Lee)</Name>
@@ -36,7 +40,7 @@ function GraduateStudents() {
                 </Row>
                 <Row justify="center" style={{ marginTop:"60px" }}>
                     <Col flex="20%">
-                        <img src={ require('../../img/graduateKim.jpg') } width='210px' height='auto'/>
+                        <img src={Kim} width='210px' height='auto'/>
                     </Col>
                     <Col flex="65%">
                         <Name>김현태 (Hyentae Kim)</Name>
