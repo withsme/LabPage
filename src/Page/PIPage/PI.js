@@ -59,7 +59,7 @@ function PI() {
 const Wrapper = styled.div`
   font-family: 'LatoRegular';
   line-height: 1.5;
-  padding: 3% 5% 3% 5%;
+  padding: 3% 0% 3% 4%;
   font-size: 1rem;
 `;
 
@@ -77,7 +77,7 @@ const SubTitle = styled.div`
   padding: 2% 1% 1% 15%;
   background-color: #F2F3F4;
   border: 0px;
-  color: #174F2C;
+  color: #0D7240;
   font-size: 1.5rem;
   font-weight: 600;
 `;
@@ -91,27 +91,21 @@ const Emp = styled.button`
   font-size: 1.15rem;
 `;
 
-const Name = styled.button`
-  border: 0px;
-  color: black;
-  background-color: white;
+const Name = styled(Emp)`
   padding: 0% 0% 0% 1.5%;
   font-size: 3rem;
 `;
 
-const Extra = styled.button`
-  border: 0px;
-  color: black;
-  background-color: white;
-  padding: 1% 0% 0% 3%;
-  font-size: 1.1rem;
+const Extra = styled(Emp)`
+  font-weight: 100;
+  padding: 1% 0% 0% 2%;
 `;
 
 const Content = styled.div`
   padding: 0% 10% 5% 5%;
 
   p {
-    padding: 0.5% 0% 0% 3%;
+    padding: 0.5% 0% 0% 2%;
     font-size: 1.1rem;
   }
 `;
